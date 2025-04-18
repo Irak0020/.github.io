@@ -1,133 +1,130 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.6;
-    color: #222;
-  }
+    color: #333;
+}
   
-  img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
-  }
+}
   
-  a {
+a {
     text-decoration: none;
-    color: #c78c06;
-  }
+    color: #d4a017;
+}
   
-  ul {
+ul {
     list-style: none;
-  }
+}
+
+/* ----- Lord Header Section---- */
+header {
+    background-color: #333;
+}
   
-  /* Header Styles */
-  header {
-    background-color: #222;
-  }
-  
-  .brand-logo {
-    background-color: #c78c06;
+.company-logo {
+    background-color: #d4a017;
     padding: 15px;
     text-align: left;
-  }
+}
   
-  .brand-logo img {
+.company-logo img {
     max-width: 40px;
-  }
-  
-  nav {
-    background-color: #222;
+}
+
+/* ======= Lord Navigation Section ======= */  
+nav {
+    background-color: #333;
     padding: 10px 0;
     width: 100%;
-  }
+}
   
-  nav ul {
+nav ul {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     width: auto;
     padding-bottom: 10px;
-  }
+}
   
-  nav ul li a {
-    color: #c78c06;
+nav ul li a {
+    color: #d4a017;
     font-size: 0.9rem;
     display: block;
-  }
-  nav ul li a:hover {
-    color: #222;
-    background-color: #c78c06;
+}
+nav ul li a:hover {
+    color: #333;
+    background-color: #d4a017;
     padding: 4px;
     width: 100%;
-  }
+}
   
-  nav form {
+.search-form {
     display: flex;
     justify-content: center;
     margin: 0px 10px 0px 10px;
-  }
+}
   
-  nav form label {
+.search-form label {
     display: none;
-  }
+}
   
-  nav form input {
+.search-form input {
     padding: 5px;
     margin: auto;
     border-radius: 4px 0 0 4px;
     border: none;
     width: 100%;
-  }
+}
   
-  nav form button {
-    background-color: #222;
-    color: #c78c06;
-    border: 1px solid #c78c06;
+.search-form button {
+    background-color: #333;
+    color: #d4a017;
+    border: 1px solid #d4a017;
     padding: 5px 10px;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-  }
-  
-  /* Main Content Styles */
-  main {
+}
+
+/* ======= Lord Main Content Styles ======= */
+main {
     width: 100%;
-  }
+}
   
-  section {
+section {
     padding: 20px;
-  }
+}
   
-  h1,
-  h2,
-  h3,
-  h4 {
+h1, h2, h3, h4 {
     margin-bottom: 10px;
-  }
+}
   
-  p {
+p {
     margin-bottom: 15px;
     font-size: 0.9rem;
     padding: 10px;
-  }
-  
-  /* Hero Section */
-  .hero-section {
+}
+
+/* ------Lord Banner Section ------ */
+.main-banner {
     position: relative;
     display: flex;
     flex-direction: column;
     color: #fff;
     overflow: hidden;
     padding: 20px;
-  }
+}
   
-  .hero-section img {
+.main-banner img {
     position: absolute;
     top: 0;
     left: 0;
@@ -135,9 +132,9 @@
     height: 100%;
     object-fit: cover;
     z-index: -2;
-  }
+}
   
-  .hero-overlay {
+.banner-overlay {
     position: absolute;
     top: 10;
     left: 0;
@@ -145,33 +142,33 @@
     height: 93%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
-  }
+}
   
-  .hero-section h1,
-  .hero-section p,
-  .hero-section a {
+.main-banner h1,
+.main-banner p,
+.main-banner a {
     position: relative;
     z-index: 1;
     margin: 0 20px;
-  }
+}
   
-  .hero-section h1 {
+.main-banner h1 {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 20px;
-  }
+}
   
-  .hero-section p {
+.main-banner p {
     font-size: 1rem;
     margin-bottom: 30px;
     line-height: 1.6;
     max-width: 800px;
     margin-right: auto;
-  }
+}
   
-  .hero-section a {
+.main-banner a {
     display: inline-block;
-    background-color: #e09e00;
+    background-color: #e0b120;
     color: #000;
     padding: 15px 15px;
     font-weight: bold;
@@ -180,67 +177,68 @@
     font-size: 1rem;
     max-width: 200px;
     margin-right: auto;
-  }
+}
   
-  .hero-section a:hover {
-    background-color: #e09e00;
-  }
-  
-  #about {
+.main-banner a:hover {
+    background-color: #e0b120;
+}
+
+/* ------Lord About Section---- */
+#about {
     display: flex;
     flex-direction: column;
-    background-color: #ffe6ac;
-  }
+    background-color: #ffecb3;
+}
   
-  #about img {
+#about img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 15px;
-  }
-  
-  /* Services Section */
-  .service-card {
-    background-color: #ffe6ac;
+}
+
+/* ----- Lord Services Section ----- */
+.service-container {
+    background-color: #ffecb3;
     margin-bottom: 30px;
-  }
+}
   
-  #services h2 {
+#services h2 {
     margin-bottom: 20px;
-  }
+}
   
-  .service-card img {
+.service-container img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 15px;
-  }
+}
   
-  .service-card h3 {
+.service-container h3 {
     font-size: 1.2rem;
     padding: 10px;
-  }
+}
   
-  .service-card a {
+.service-container a {
     display: inline-block;
-    background-color: #222;
+    background-color: #333;
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 0.8rem;
     font-weight: bold;
     margin: 0px 0px 10px 10px;
-  }
-  
-  /* Vision Section */
-  .vision-section {
+}
+
+/*-----Lord Philosophy Section ----- */
+.philosophy {
     position: relative;
     color: white;
     padding: 0;
     height: 250px;
-  }
+}
   
-  .vision-section img {
+.philosophy img {
     position: absolute;
     top: 0;
     left: 0;
@@ -248,174 +246,173 @@
     height: 100%;
     object-fit: cover;
     z-index: -2;
-  }
+}
   
-  .vision-section h2,
-  .vision-section p,
-  .vision-section a {
+.philosophy h2,
+.philosophy p,
+.philosophy a {
     position: absolute;
     left: 20px;
     right: 20px;
-  }
+}
   
-  .vision-section h2 {
+.philosophy h2 {
     top: 50px;
-  }
+}
   
-  .vision-section p {
+.philosophy p {
     top: 90px;
     font-size: 0.85rem;
-  }
-  .vision-section a {
+}
+.philosophy a {
     bottom: 30px;
-    background-color: rgba(34, 34, 34, 0.6);
+    background-color: rgba(51, 51, 51, 0.6);
     color: #ffffff;
     padding: 8px 15px;
     border-radius: 4px;
     font-weight: bold;
     font-size: 0.9rem;
     width: fit-content;
-    border: 1px solid #c78c06;
-  }
-  
-  /* Team Section */
-  .team-profile {
+    border: 1px solid #d4a017;
+}
+
+/* ======= Lord Team Section ======= */
+.team-member {
     margin-bottom: 30px;
-    background-color: #ffe6ac;
-  }
+    background-color: #ffecb3;
+}
   
-  .team-profile img {
+.team-member img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 15px;
-  }
+}
   
-  .team-profile h3 {
+.team-member h3 {
     font-size: 1.2rem;
     margin: 10px;
-  }
+}
   
-  .team-profile h4 {
+.team-member h4 {
     font-size: 0.9rem;
     font-weight: bold;
     color: #000000;
     margin: 10px;
-    border-bottom: 2px solid #c78c06;
-  }
-  
-  /* Contact Section */
-  #contact {
+    border-bottom: 2px solid #d4a017;
+}
+
+/* ------ Lord Contact Section-----*/
+#contact {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  #contact h2 {
+#contact h2 {
     margin-bottom: 20px;
-  }
+}
   
-  #contact h3 {
+#contact h3 {
     margin-bottom: 15px;
-  }
+}
   
-  .contact-form {
+.contact-form {
     margin-bottom: 30px;
-  }
+}
   
-  .contact-form label {
+.contact-form label {
     display: block;
     margin-bottom: 5px;
     font-size: 0.9rem;
-  }
+}
   
-  .contact-form input,
-  .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
+}
   
-  .contact-form button {
-    background-color: #222;
-    color: #c78c06;
+.contact-form button {
+    background-color: #333;
+    color: #d4a017;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
-  }
-  
-  /* Hours of Operation */
-  .operation-hours {
+}
+
+/* ------Lord Business Hours Section -----*/
+.business-hours {
     margin-bottom: 30px;
-  }
+}
   
-  .operation-hours h2 {
+.business-hours h2 {
     font-size: 1.2rem;
-  }
+}
   
-  table {
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-  }
+}
   
-  table th {
+table th {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
     font-size: 0.9rem;
-  }
-  table td {
+}
+table td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
     font-size: 0.9rem;
     font-weight: 600;
-  }
+}
   
-  table th {
-    background-color: #ffe6ac;
-  }
-  
-  /* Map */
-  .location-map {
+table th {
+    background-color: #ffecb3;
+}
+
+/* ---- Lord Location Section ---- */
+.studio-location {
     margin-bottom: 30px;
-  }
+}
   
-  .location-map iframe {
+.studio-location iframe {
     width: 100%;
     height: 250px;
     border: none;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #222;
-    color: #c78c06;
+}
+
+/* ------Lord Footer Section ----- */
+footer {
+    background-color: #333;
+    color: #d4a017;
     text-align: left;
     padding: 20px;
     font-size: 0.8rem;
-  }
+}
   
-  footer p {
+footer p {
     margin-bottom: 5px;
-  }
-  .photo-source {
-    color: #ffe6ac;
+}
+.image-source {
+    color: #ffecb3;
     text-decoration: underline;
-  }
-  
-  /* Icons */
-  .fa-caret-right {
+}
+
+/* ----- Lord Icons Section ----- */
+.fa-caret-right {
     margin-left: 5px;
-  }
-  
-  /* Media Queries for larger screens */
-  @media (min-width: 760px) {
-    /* Header */
+}
+
+/* ---- Lord Media Queries ----- */
+@media (min-width: 760px) {
     header {
       display: flex;
       justify-content: space-evenly;
@@ -423,10 +420,11 @@
       max-width: 100%;
     }
   
-    .brand-logo {
+    .company-logo {
       background-color: transparent;
       padding: 10px 0;
     }
+    
     nav {
       background-color: transparent;
       display: flex;
@@ -456,39 +454,37 @@
     }
     
     nav ul li a:hover {
-      color: #222;
-      background-color: #c78c06;
+      color: #333;
+      background-color: #d4a017;
       padding: 10px;
     }
     
-    nav form {
+    .search-form {
       display: flex;
       align-items: center;
     }
     
-    nav form label {
+    .search-form label {
       display: none;
     }
     
-    nav form input {
+    .search-form input {
       padding: 5px 10px;
       border-radius: 4px 0 0 4px;
       border: none;
       width: 250px;
     }
     
-    nav form button {
-      background-color: #222;
-      border: 1px solid #c78c06;
+    .search-form button {
+      background-color: #333;
+      border: 1px solid #d4a017;
       padding: 5px 15px;
       border-radius: 0 4px 4px 0;
       cursor: pointer;
-      color: #c78c06;
+      color: #d4a017;
     }
     
-  
-    /* Two-column layouts */
-    .hero-overlay {
+    .banner-overlay {
       position: absolute;
       top: 10;
       left: 10px;
@@ -500,6 +496,7 @@
       padding-right: 80px;
       padding-left: 80px;
     }
+    
     #about {
       flex-direction: row;
       align-items: center;
@@ -516,19 +513,24 @@
       grid-template-columns: repeat(6, 1fr);
       gap: 20px;
     }
-    .digital-service {
+    
+    .digital-solutions {
       grid-column: 1/4;
     }
-    .marketing-service {
+    
+    .brand-strategy {
       grid-column: 4/7;
     }
-    .video-service {
+    
+    .media-production {
       grid-column: 1/3;
     }
-    .web-service {
+    
+    .development {
       grid-column: 3/5;
     }
-    .print-service {
+    
+    .design {
       grid-column: 5/7;
     }
   
@@ -536,12 +538,12 @@
       grid-column: 1 / -1;
     }
   
-    .team-profile {
+    .team-member {
       display: flex;
       align-items: flex-start;
     }
   
-    .team-profile img {
+    .team-member img {
       width: 40%;
       margin-right: 20px;
       margin-bottom: 0;
@@ -554,25 +556,27 @@
       max-width: 1100px;
       margin: auto;
     }
+    
     .contact-form {
       grid-column: 1/2;
     }
-    .location-map {
+    
+    .studio-location {
       grid-column: 2/3;
       grid-row: 2/3;
       max-height: 100px;
     }
-    .operation-hours {
+    
+    .business-hours {
       grid-column: 1/3;
     }
     
     #contact h2 {
       grid-column: 1 / -1;
     }
-  }
+}
   
-  @media (min-width: 760px) {
-    /* Header */
+@media (min-width: 760px) {
     header {
       display: flex;
       justify-content: space-evenly;
@@ -580,7 +584,7 @@
       max-width: 100%;
     }
   
-    .brand-logo {
+    .company-logo {
       background-color: transparent;
       padding: 10px 0;
     }
@@ -601,35 +605,37 @@
       margin: 0 10px;
     }
   
-    nav form {
+    .search-form {
       display: flex;
       align-items: center;
       max-width: 100%;
     }
   
-    nav form label {
+    .search-form label {
       display: none;
     }
   
-    nav form input {
+    .search-form input {
       padding: 5px;
       border-radius: 4px 0 0 4px;
       border: none;
     }
   
-    nav form button {
-      background-color: #222;
-      border: 1px solid #c78c06;
+    .search-form button {
+      background-color: #333;
+      border: 1px solid #d4a017;
       padding: 5px 10px;
       border-radius: 0 4px 4px 0;
       cursor: pointer;
       max-width: 900px;
     }
-    .hero-section {
+    
+    .main-banner {
       padding-right: 80px;
       padding-left: 80px;
     }
-    .hero-overlay {
+    
+    .banner-overlay {
       position: absolute;
       top: 10;
       left: 20px;
@@ -641,7 +647,7 @@
       padding-right: 80px;
       padding-left: 80px;
     }
-    /* Two-column layouts */
+    
     #about {
       flex-direction: row;
       align-items: center;
@@ -662,19 +668,24 @@
       max-width: 1000px;
       margin: auto;
     }
-    .digital-service {
+    
+    .digital-solutions {
       grid-column: 1/4;
     }
-    .marketing-service {
+    
+    .brand-strategy {
       grid-column: 4/7;
     }
-    .video-service {
+    
+    .media-production {
       grid-column: 1/3;
     }
-    .web-service {
+    
+    .development {
       grid-column: 3/5;
     }
-    .print-service {
+    
+    .design {
       grid-column: 5/7;
     }
   
@@ -687,7 +698,7 @@
       grid-template-columns: 1fr 1fr;
     }
   
-    .team-profile img {
+    .team-member img {
       width: 40%;
       margin-right: 20px;
       margin-bottom: 0;
@@ -700,19 +711,22 @@
       max-width: 1100px;
       margin: auto;
     }
+    
     .contact-form {
       grid-column: 1/2;
     }
-    .location-map {
+    
+    .studio-location {
       grid-column: 2/3;
       grid-row: 2/3;
       max-height: 100px;
     }
-    .operation-hours {
+    
+    .business-hours {
       grid-column: 1/3;
     }
     
     #contact h2 {
       grid-column: 1 / -1;
     }
-  }
+}
